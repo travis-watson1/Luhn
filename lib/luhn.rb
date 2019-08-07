@@ -7,7 +7,7 @@ module Luhn
         #Start from right, double every second digit)
         single_digit_array.each_with_index do |num, index|
             if single_digit_array.length.even?
-                if index.even? || index == 0
+                if index.even?
                     single_digit_array[index] = num * 2
                 end
             end
